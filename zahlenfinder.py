@@ -1,4 +1,6 @@
+# Ich habe Zeilen hinzugefügt
 import re
+
 
 def zahlen_finder(text_datei):
     with open(text_datei, "r") as input:
@@ -8,6 +10,7 @@ def zahlen_finder(text_datei):
         for zahl in zahlen_liste:
             output.write(zahl)
             output.write("\n")
+
 
 dateiname = input("Bitte den Dateipfad samt Dateinamen eingeben: ")
 zahlen_finder(dateiname)
